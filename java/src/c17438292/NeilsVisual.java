@@ -6,8 +6,7 @@ public class NeilsVisual extends Visual {
 
     public void settings()
     {
-        size(1024, 500);
-        
+        //size(1024, 500, P3D);
     //  Use this to make fullscreen
         //fullScreen();
 
@@ -17,13 +16,11 @@ public class NeilsVisual extends Visual {
 
     public void setup()
     {
+    //  surface.setResizable(true);
         startMinim();
                 
     //  Call loadAudio to load an audio file to process 
-        loadAudio("heroplanet.mp3"); 
-        
-        surface.setResizable(true);
-
+        loadAudio("Narcissus.mp3"); 
         
     //  Call this instead to read audio from the microphone
         //startListening(); 
