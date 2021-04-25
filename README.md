@@ -17,7 +17,7 @@ It reacts to the sound of the music in multiple ways throughout the  song includ
 
 # Instructions
 
-![An image](images/v1.jpg)
+![An image](images/v1.jpeg)
 
 # How it works
 
