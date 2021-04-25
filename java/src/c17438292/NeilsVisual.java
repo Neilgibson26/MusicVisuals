@@ -7,7 +7,6 @@ public class NeilsVisual extends Visual {
     Intro io;
     Disco disco;
     RotatingAudioBands rb;
-    AudioBands abs;
 
     float aa;
     float halfh, halfw;
@@ -59,9 +58,6 @@ public class NeilsVisual extends Visual {
         disco = new Disco(this, halfw, halfh);
 
         rb = new RotatingAudioBands(this, halfw, halfh);
-
-        abs = new AudioBands(this);
-
     }
 
     public void keyPressed()
@@ -116,10 +112,6 @@ public class NeilsVisual extends Visual {
         if (key == '8')
         {
             rb.render();
-        }
-        if (key == '9')
-        {
-            abs.render();
         }
     }
 

@@ -16,8 +16,16 @@ This assignment is a cool, funky visual representation of a song by Roisin Murph
 It reacts to the sound of the music in multiple ways throughout the  song including the colours of some items, and the size of some items. As it is a funky song I decided to choose vibrant colours throughout and base my design around disco and disco themes. It will start with an intro that renders automatically with the song, introducing me and the song name and artist. Then moving to a disco ball for a few moments to set the scene of the song until the song ups the tempo. After this it will cut to a vinyl record and this is where the audio visuals begin. This will be the main screen throughout now and as the song continues I incremently add more features to the screen that react to the sound until finally finishing with a small reactive outro.
 
 # Instructions
-
-![An image](images/v1.jpeg)
+1.  This is the intro and it loads automatically on the first render along with the music. Keep it playing untill enjoy sits in the middle of the screen and the music starts to pick up. ![An image](images/intro.jpg)
+1.  This is the disco ball that will spin for approx 30 seconds again until a key change in the music, its purpose is to jut set the discoey scene for the rest of the visual. You access this by hitting the spacebar. ![An image](images/disco.jpg)
+1.  This the first iteration of the vinyl record and to get this you press the number '1' key. ![An image](images/v1.jpeg)
+1.  This is the second iteration of the vinyl which spawns 2 cubes on the top left and bottom right of the screen. This will be swapped back and forth with the next feature to create some nice visuals. This can be accessed buy hitting the '2' key. ![An image](images/v2.jpg)
+1. This is the 3rd iteration and as mentioned befor will be swapped back and forth with the previous feature to create nice visuals to go along with the music. This spawns 2 cubes on the top right and bottom left of the screen. This feature can be accessed by hitting the number '3' key. ![An image](images/v3.jpg)
+1.  This is the 4th iteration of the vinyl and should appear around the time of the first hook.  This can be accessed by pressing the number '4' key and will join the previous 2 features and spawn all 4 cubes on each corner of the screen at the same time. ![An image](images/v4.jpg)
+1.  This is the fifth iteration which will begin to tease sine waves connecting the cubes from top to bottom and again similarly will be rotated out with the next feature back and forth until the next major key change/chorus. Accessed by pressing the number '5' key. ![An image](images/v5.jpg)
+1.  This is the sixth iteration of the vinyl, teasing sine waves connecting cubes from left to right and should be swapped back and forth with the previous feature along with the beat until the next hook/chorus. Accessed by pressing the number '6' key. ![An image](images/v6.jpg)
+1.  This is the final form of the vinyl and will combine every feature up until now. Every feature before this has beenleading up to this stage and can be accessed by pressing the '7' key. ![An image](images/v7.jpg)
+1.  Finally as the music fizzles out there will be a small outro with rotating cubes that grow and shrink with the sound of the music and a thank you note. This can be accessed by pressing the number '8' key. *!!!This should only be pressed last as it changes the angle of the screens camera to view these rotating audio bands.* ![An image](images/outro.jpg)
 
 # How it works
 
