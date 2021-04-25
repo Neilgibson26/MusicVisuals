@@ -17,6 +17,8 @@ It reacts to the sound of the music in multiple ways throughout the  song includ
 
 # Instructions
 
+![An image](images/v1.jpg)
+
 # How it works
 
 # What I am most proud of in the assignment
