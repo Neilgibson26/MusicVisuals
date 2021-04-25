@@ -1,10 +1,11 @@
 {
     "configurations": [
+        
         {
             "type": "java",
             "name": "CodeLens (Launch) - Main",
             "request": "launch",
-            "mainClass": "ie.tudublin.Main",
+            "mainClass": "c17438292.Main",
             "projectName": "java"
         }
     ]

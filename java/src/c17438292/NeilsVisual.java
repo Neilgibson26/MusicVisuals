@@ -2,7 +2,16 @@ package c17438292;
 
 public class NeilsVisual extends Visual {
 
-    Vinyl v;
+    Vinyl v, v2, v3, v4;
+    Wave w, w1, w2, w3, w4;
+    Intro io;
+    Disco disco;
+    RotatingAudioBands rb;
+    AudioBands abs;
+
+    float aa;
+    float halfh, halfw;
+    float waveX, waveY;
 
     public void settings()
     {
@@ -18,34 +27,112 @@ public class NeilsVisual extends Visual {
     {
     //  surface.setResizable(true);
         startMinim();
+        
+        //setFrameSize(256);
                 
     //  Call loadAudio to load an audio file to process 
-        loadAudio("Narcissus.mp3"); 
+        loadAudio("MurphysLaw.mp3");
+        getAudioPlayer().play(); 
         
     //  Call this instead to read audio from the microphone
         //startListening(); 
-        v = new Vinyl(this);
+
+        halfh = height/2;
+        halfw = width/2;
+        waveX = width * 0.38f;
+        waveY = height * 0.35f;
+        background(0);
+
+        v = new Vinyl(this, 0);
+        v2 = new Vinyl(this, 2);
+        v3 = new Vinyl(this, 3);
+        v4 = new Vinyl(this, 4);
+
+        w = new Wave(this, waveX, waveY, width-waveX, waveY);
+        w1 = new Wave(this, (width*0.1f), (height*0.1f), (width*0.1f),  (height*0.9f));
+        w2 = new Wave(this, (width*0.9f), (height*0.1f), (width*0.9f),  (height*0.9f));
+        w3 = new Wave(this, (width*0.1f), (height*0.1f), (width*0.9f),  (height*0.1f));
+        w4 = new Wave(this, (width*0.1f), (height*0.9f), (width*0.9f),  (height*0.9f));
+
+        io = new Intro(this, halfw, halfh);
+
+        disco = new Disco(this, halfw, halfh);
+
+        rb = new RotatingAudioBands(this, halfw, halfh);
+
+        abs = new AudioBands(this);
+
     }
 
     public void keyPressed()
     {
         if (key == ' ')
         {
-            getAudioPlayer().cue(0);
-            getAudioPlayer().play();
+            disco.render();
+        }
+        if (key == '1')
+        {
+            v.render();
+            w.render(); 
+        }
+        if (key == '2')
+        {
+            v2.render();
+            w.render(); 
+        }
+        if (key == '3')
+        {
+            v3.render();
+            w.render(); 
+        }
+        if (key == '4')
+        {
+            v4.render();
+            w.render(); 
+        }
+        if (key == '5')
+        {
+            v4.render();
+            w.render();
+            w1.render();
+            w2.render();
+        }
+        if (key == '6')
+        {
+            v4.render();
+            w.render();
+            w3.render();
+            w4.render();
+        }
+        if (key == '7')
+        {
+            v4.render();
+            w.render();
+            w1.render();
+            w2.render();
+            w3.render();
+            w4.render();
+        }
+        if (key == '8')
+        {
+            rb.render();
+        }
+        if (key == '9')
+        {
+            abs.render();
         }
     }
 
     public void draw()
     {
-        background(0);
+        io.render();
 
-        // Call this if you want to use FFT data
-        // try {
-                //  calculateFFT();
-        // } catch (VisualException e) {
-        //     e.printStackTrace();
-        // } 
+        //  Call this if you want to use FFT data
+        try {
+                calculateFFT();
+        } catch (VisualException e) {
+            e.printStackTrace();
+        } 
 
     //  Call this is you want to use frequency bands
         calculateFrequencyBands(); 
@@ -53,7 +140,8 @@ public class NeilsVisual extends Visual {
     //  Call this is you want to get the average amplitude
         calculateAverageAmplitude();
         
-    //  Render the Vinyl visuals.
-        v.render();      
+        keyPressed();
+        
+     
     }
 }

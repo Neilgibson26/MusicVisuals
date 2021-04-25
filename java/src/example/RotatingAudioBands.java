@@ -62,7 +62,7 @@ public class RotatingAudioBands extends Visual {
         lights();
         stroke(map(getSmoothedAmplitude(), 0, 1, 0, 255), 255, 255);
         camera(0, -500, 500, 0, 0, 0, 0, 1, 0);
-        //translate(0, 0, -250);
+        translate(0, 0, -250);
 
         rot += getAmplitude() / 8.0f;
 
