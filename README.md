@@ -1,6 +1,6 @@
 # Music Visualiser Project
 
-Name: Neil
+Name: Neil Gibson
 
 Student Number: C17438292
 
@@ -12,6 +12,8 @@ Student Number: C17438292
 - Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
 
 # Description of the assignment
+This assignment is a cool, funky visual representation of a song by Roisin Murphy called Murphys Law.
+It reacts to the sound of the music in multiple ways throughout the  song including the colours of some items, and the size of some items. As it is a funky song I decided to choose vibrant colours throughout and base my design around disco and disco themes. It will start with an intro that renders automatically with the song, introducing me and the song name and artist. Then moving to a disco ball for a few moments to set the scene of the song until the song ups the tempo. After this it will cut to a vinyl record and this is where the audio visuals begin. This will be the main screen throughout now and as the song continues I incremently add more features to the screen that react to the sound until finally finishing with a small reactive outro.
 
 # Instructions
 
