@@ -16,7 +16,7 @@ This assignment is a cool, funky visual representation of a song by Roisin Murph
 It reacts to the sound of the music in multiple ways throughout the  song including the colours of some items, and the size of some items. As it is a funky song I decided to choose vibrant colours throughout and base my design around disco and disco themes. It will start with an intro that renders automatically with the song, introducing me and the song name and artist. Then moving to a disco ball for a few moments to set the scene of the song until the song ups the tempo. After this it will cut to a vinyl record and this is where the audio visuals begin. This will be the main screen throughout now and as the song continues I incremently add more features to the screen that react to the sound until finally finishing with a small reactive outro. It is controlled using the spacebar and the numbers 1 to 8.
 
 # Instructions
-1.  This is the intro and it loads automatically on the first render along with the music. *Keep it playing untill enjoy sits in the middle of the screen and the music starts to pick up.* ![An image](images/intro.jpg)
+1.  This is the intro and it loads automatically on the first render along with the music. * Keep it playing untill enjoy sits in the middle of the screen and the music starts to pick up. * ![An image](images/intro.jpg)
 1.  This is the disco ball that should spin for approx 30 seconds again until a key change in the music, its purpose is to set the discoey scene for the rest of the visual. You access this by hitting the spacebar. ![An image](images/disco.jpg)
 1.  This the first iteration of the vinyl record and should be pressed after the first key change in the song. Accessed by pressing the number '1' key. ![An image](images/v1.jpeg)
 1.  This is the second iteration of the vinyl which spawns 2 cubes on the top left and bottom right of the screen. This will be swapped back and forth with the next feature to create some nice visuals. This can be accessed buy hitting the '2' key. ![An image](images/v2.jpg)
@@ -62,5 +62,7 @@ I am most proud of my use of constructor chaining and general understanding and 
 I am also really proud of the sine wave class I made which maps the 2 x and y co-ordinates passed and determines whether or not the sine wave will be displayed horizontally or vertically based on the values which i thought was pretty cool. It also fits really well with the music!
 
 # Tutorial/Video of visuals
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://youtu.be/v-pLqiG7g-Y)
+[![YouTube](https://i9.ytimg.com/vi_webp/v-pLqiG7g-Y/mqdefault.webp?time=1619444400000&sqp=CLCFm4QG&rs=AOn4CLAOi_r55nkh_FDuvWJKIrVr7edi-g)](https://youtu.be/v-pLqiG7g-Y)
+
+* If this link does not work then the video is in the data folder * 
 
