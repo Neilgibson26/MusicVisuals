@@ -4,13 +4,6 @@ Name: Neil Gibson
 
 Student Number: C17438292
 
-## Instructions
-- Fork this repository and use it a starter project for your assignment
-- Create a new package named your student number and put all your code in this package.
-- You should start by creating a subclass of ie.tudublin.Visual
-- There is an example visualiser called MyVisual in the example package
-- Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
-
 # Description of the assignment
 This assignment is a cool, funky visual representation of a song by Roisin Murphy called Murphys Law.
 It reacts to the sound of the music in multiple ways throughout the  song including the colours of some items, and the size of some items. As it is a funky song I decided to choose vibrant colours throughout and base my design around disco and disco themes. It will start with an intro that renders automatically with the song, introducing me and the song name and artist. Then moving to a disco ball for a few moments to set the scene of the song until the song ups the tempo. After this it will cut to a vinyl record and this is where the audio visuals begin. This will be the main screen throughout now and as the song continues I incremently add more features to the screen that react to the sound until finally finishing with a small reactive outro. It is controlled using the spacebar and the numbers 1 to 8.
@@ -37,7 +30,21 @@ It reacts to the sound of the music in multiple ways throughout the  song includ
 1.  Finally as the music fizzles out there will be a small outro with rotating cubes that grow and shrink with the sound of the music and a thank you note. This can be accessed by pressing the number '8' key. *!!!This should only be pressed last as it changes the angle of the screens camera to view these rotating audio bands!!!* ![An image](images/outro.jpg)
 
 # How it works
-Firstly I created an abstract class that contains all of the methods I need to read in an audio buffer, get the amplitudes of the song, calculate the average amplitude, audio bands and then the getters and setters required for all aforementioned. The main processing class then extends this and sets the program up by retrieving all of the information needed to create reactive visuals. I have 
+Firstly I created an abstract class that contains all of the methods I need to read in an audio buffer, get the amplitudes of the song, calculate the average amplitude, audio bands and then the getters and setters required for all aforementioned. The main processing class then extends this and sets the program up by retrieving all of the information needed to create reactive visuals. I have 6 seperate classes other than the 2 just mentioned.
+
+The first is just a quick intro that displays some rolling credits to introduce the project. They start at the top of the screen and their y value is increased by 1 every frame. The next sentence does not start rolling until the current sentence hits the middle of the screen. This is all controlled by if statements.
+
+The second class is a sphere that is translated to the exact middle of the screen and rotates its x value by 1 every frame to create a spinning effect.
+
+The 3rd class is the vinyl record class. This takes in a reference to main and the number of cubes I want drawn on the screen at a given time whichcan either be 2, 3, or 4. The circles radius in this class are controlled by the amplitude of the music playing. I use this amplitude to create a smoother transition by using the lerp function which creates a height that gets 20% closer to the current amplitude every frame to avoid any extreme changes in the amplitude and make it look cleaner. This class then chains its constructor to 2 other classes to create the sine wave on the cover of the record and any cubes that will be used later on.
+
+The wave class I created takes in 5 parameters which are a reference to the main class and its processing library, the x y of the start position of the wave and the x y of the end position of the wave. This then checks if x1 and x2 are the same or if y1 and y2are the same to determine if the wave is going up the screen or accross the screen. It then maps out from start to finish drawing lines at each point using the audiobuffer I read in every frame, by refernce of main class to get the length of each line along the path which creates a sinusoidal effect.
+
+The cube class takes again a reference to main, the x y of where I want it translated to the screen, the height I want the box to be and a boolean which determines if I want both the x and y axis to be spun. It then uses these parameters to draw a box to the screen with a box half its height inside to create a cool effect. This is done by pushing to matrix before creation of first box and then popping from the matricx when completed to avoid  the translations being messed up.
+
+Finally the last class is Rotating audio visual bands for my outro again accepting a reference to main. This changes the camera angle of the screen to be able to view the bands rotating better. This then gets the array of smoothed bands to use for rotating around the screen and the amplitude every frame to determin the height of heach band. Lastly it uses cos and sin to get the radius of the circle and each point around the radius of the circle which is used to rotate these bands around together.
+
+
 
 # What I am most proud of in the assignment
 I am most proud of my use of constructor chaining and general understanding and implementation of OOP concepts throughout this project which at at the start of the semester I definitely would not have had a clue. Particularly the constructor for the vinyl record class which calls the cube classes constructor to create a nice visual.
