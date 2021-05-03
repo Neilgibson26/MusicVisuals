@@ -30,7 +30,7 @@ It reacts to the sound of the music in multiple ways throughout the  song includ
 1.  Finally as the music fizzles out there will be a small outro with rotating cubes that grow and shrink with the sound of the music and a thank you note. This can be accessed by pressing the number '8' key. *!!!This should only be pressed last as it changes the angle of the screens camera to view these rotating audio bands!!!* ![An image](images/outro.jpg)
 
 # How it works
-Firstly I created an abstract class that contains all of the methods I need to read in an audio buffer, get the amplitudes of the song, calculate the average amplitude, audio bands and then the getters and setters required for all aforementioned. The main processing class then extends this and sets the program up by retrieving all of the information needed to create reactive visuals. I have 6 seperate classes other than the 2 just mentioned.
+Firstly I created an abstract class that contains all of the methods I need to read in an audio buffer, get the amplitudes of the song, calculate the average amplitude, audio bands using the minim and fft libraries. I then generated the getters and setters required for all aforementioned. The main processing class then extends this and sets the program up by retrieving all of the information needed to create reactive visuals. I have 6 seperate classes other than the 2 just mentioned.
 
 The first is just a quick intro that displays some rolling credits to introduce the project. They start at the top of the screen and their y value is increased by 1 every frame. The next sentence does not start rolling until the current sentence hits the middle of the screen. This is all controlled by if statements.
 
