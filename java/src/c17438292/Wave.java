@@ -1,7 +1,5 @@
 package c17438292;
 
-
-
 import processing.core.PApplet;
 
 public class Wave

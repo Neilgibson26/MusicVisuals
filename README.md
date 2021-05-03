@@ -82,7 +82,7 @@ I am also really proud of the sine wave class I made which maps the 2 x and y co
 
 # Tutorial/Video of visuals
 
-Click the picture!! Or if not loading click anyways for video!!
+Click the picture!! Or if not loading click link for video!!
 [![YouTube](https://i9.ytimg.com/vi_webp/v-pLqiG7g-Y/mqdefault.webp?time=1619444400000&sqp=CLCFm4QG&rs=AOn4CLAOi_r55nkh_FDuvWJKIrVr7edi-g)](https://youtu.be/v-pLqiG7g-Y)
 
 * *If this link does not work then the video is in the data folder!!* 
