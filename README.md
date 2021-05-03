@@ -37,6 +37,7 @@ It reacts to the sound of the music in multiple ways throughout the  song includ
 1.  Finally as the music fizzles out there will be a small outro with rotating cubes that grow and shrink with the sound of the music and a thank you note. This can be accessed by pressing the number '8' key. *!!!This should only be pressed last as it changes the angle of the screens camera to view these rotating audio bands!!!* ![An image](images/outro.jpg)
 
 # How it works
+Firstly I created an abstract class that contains all of the methods I need to read in an audio buffer, get the amplitudes of the song, calculate the average amplitude, audio bands and then the getters and setters required for all aforementioned. The main processing class then extends this and sets the program up by retrieving all of the information needed to create reactive visuals. I have 
 
 # What I am most proud of in the assignment
 I am most proud of my use of constructor chaining and general understanding and implementation of OOP concepts throughout this project which at at the start of the semester I definitely would not have had a clue. Particularly the constructor for the vinyl record class which calls the cube classes constructor to create a nice visual.
