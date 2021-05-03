@@ -36,13 +36,15 @@ The first is just a quick intro that displays some rolling credits to introduce 
 
 The second class is a sphere that is translated to the exact middle of the screen and rotates its x value by 1 every frame to create a spinning effect.
 
-The 3rd class is the vinyl record class. This takes in a reference to main and the number of cubes I want drawn on the screen at a given time whichcan either be 2, 3, or 4. The circles radius in this class are controlled by the amplitude of the music playing. I use this amplitude to create a smoother transition by using the lerp function which creates a height that gets 20% closer to the current amplitude every frame to avoid any extreme changes in the amplitude and make it look cleaner. This class then chains its constructor to 2 other classes to create the sine wave on the cover of the record and any cubes that will be used later on.
+The 3rd class is the vinyl record class. This takes in a reference to main and the number of cubes I want drawn on the screen at a given time which can either be 2, 3, or 4. The circles radius in this class are controlled by the amplitude of the music playing. I use this amplitude to create a smoother transition by using the lerp function which creates a height that gets 20% closer to the current amplitude every frame to avoid any extreme changes in the amplitude and make it look cleaner. This class then chains its constructor to 2 other classes to create the sine wave on the cover of the record and any cubes that will be used later on.
 
-The wave class I created takes in 5 parameters which are a reference to the main class and its processing library, the x y of the start position of the wave and the x y of the end position of the wave. This then checks if x1 and x2 are the same or if y1 and y2are the same to determine if the wave is going up the screen or accross the screen. It then maps out from start to finish drawing lines at each point using the audiobuffer I read in every frame, by refernce of main class to get the length of each line along the path which creates a sinusoidal effect.
+The wave class I created takes in 5 parameters which are a reference to the main class and its processing library, the x y of the start position of the wave and the x y of the end position of the wave. This then checks if x1 and x2 are the same or if y1 and y2 are the same to determine if the wave is going up the screen or accross the screen. It then maps out from start to finish, drawing lines at each point using the audiobuffer I read in every frame by refernce of main class to get the length of each line along the path which creates a sinusoidal effect.
 
-The cube class takes again a reference to main, the x y of where I want it translated to the screen, the height I want the box to be and a boolean which determines if I want both the x and y axis to be spun. It then uses these parameters to draw a box to the screen with a box half its height inside to create a cool effect. This is done by pushing to matrix before creation of first box and then popping from the matricx when completed to avoid  the translations being messed up.
+The cube class takes again a reference to main, the x y of where I want it translated to the screen, the height I want the box to be and a boolean which determines if I want both the x and y axis to be spun. It then uses these parameters to draw a box to the screen with a box half its height inside to create a cool effect. This is done by pushing to matrix before creation of first box and then popping from the matricx when completed to avoid the translations being messed up.
 
 Finally the last class is Rotating audio visual bands for my outro again accepting a reference to main. This changes the camera angle of the screen to be able to view the bands rotating better. This then gets the array of smoothed bands to use for rotating around the screen and the amplitude every frame to determin the height of heach band. Lastly it uses cos and sin to get the radius of the circle and each point around the radius of the circle which is used to rotate these bands around together.
+
+I then use the 'key pressed' function to control each feature created. The space bar and numbers 1-8 all display different features than can be used throughout a song of your choice.
 
 
 
@@ -79,6 +81,8 @@ I am most proud of my use of constructor chaining and general understanding and 
 I am also really proud of the sine wave class I made which maps the 2 x and y co-ordinates passed and determines whether or not the sine wave will be displayed horizontally or vertically based on the values which i thought was pretty cool. It also fits really well with the music!
 
 # Tutorial/Video of visuals
+
+Click the picture!! Or if not loading click anyways for video!!
 [![YouTube](https://i9.ytimg.com/vi_webp/v-pLqiG7g-Y/mqdefault.webp?time=1619444400000&sqp=CLCFm4QG&rs=AOn4CLAOi_r55nkh_FDuvWJKIrVr7edi-g)](https://youtu.be/v-pLqiG7g-Y)
 
 * *If this link does not work then the video is in the data folder!!* 
