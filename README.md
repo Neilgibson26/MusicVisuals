@@ -11,7 +11,7 @@ It reacts to the sound of the music in multiple ways throughout the  song includ
 # Instructions
 1.  This is the intro and it loads automatically on the first render along with the music. *Keep it playing untill enjoy sits in the middle of the screen and the music starts to pick up.* ![An image](images/intro.jpg)
 
-1.  This is the disco ball that should spin for approx 30 seconds again until a key change in the music, its purpose is to set the discoey scene for the rest of the visual. You access this by hitting the spacebar. ![An image](images/disco.jpg)
+1.  This is the disco ball that should spin for approx 30 seconds again until a key change in the music, its purpose is to set the discoey scene for the rest of the visual with a nice spinning disco ball that changes colour and some rain. You access this by hitting the spacebar. ![An image](images/Disco.jpg)
 
 1.  This the first iteration of the vinyl record and should be pressed after the first key change in the song. Accessed by pressing the number '1' key. ![An image](images/v1.jpeg)
 
@@ -34,7 +34,7 @@ Firstly I created an abstract class that contains all of the methods I need to r
 
 The first is just a quick intro that displays some rolling credits to introduce the project. They start at the top of the screen and their y value is increased by 1 every frame. The next sentence does not start rolling until the current sentence hits the middle of the screen. This is all controlled by if statements.
 
-The second class is a sphere that is translated to the exact middle of the screen and rotates its x value by 1 every frame to create a spinning effect.
+The second class is a sphere that is translated to the exact middle of the screen and rotates its Y axis by 1 every frame to create a spinning effect. It also maps through hsbs colours using the amplitude of the song to change the colour of the spinning ball to create that disco ball effect. I made a seperate class for the rain drops and created an array of these rain drops then with random x values y values and speeds to create the rainy effect. When the rain drop hit the bottom of the screen I redrew it back to the top of the screen to create an endless loop of raindrops.
 
 The 3rd class is the vinyl record class. This takes in a reference to main and the number of cubes I want drawn on the screen at a given time which can either be 2, 3, or 4. The circles radius in this class are controlled by the amplitude of the music playing. I use this amplitude to create a smoother transition by using the lerp function which creates a height that gets 20% closer to the current amplitude every frame to avoid any extreme changes in the amplitude and make it look cleaner. This class then chains its constructor to 2 other classes to create the sine wave on the cover of the record and any cubes that will be used later on.
 
@@ -78,7 +78,11 @@ I am most proud of my use of constructor chaining and general understanding and 
 
     }
 ```
-I am also really proud of the sine wave class I made which maps the 2 x and y co-ordinates passed and determines whether or not the sine wave will be displayed horizontally or vertically based on the values which i thought was pretty cool. It also fits really well with the music!
+I am also really proud of the sine wave class I made which maps the 2 x and y co-ordinates passed and determines whether or not the sine wave will be displayed horizontally or vertically based on the values which i thought was pretty cool and a nice problem to solve. It also fits really well with the music!
+
+I am also proud of how I set up all my classes with inheritance and polymorphism throughout and kept my code clean and easy to read.
+
+Lastly I would say the vector/array of a type(class) that i made to form the rain drops on the disco ball visual was something new for me so it took lot of messing around with the code to get it the way I wanted it. I gained alot of general programming knowledge in making arrays of a class like that.
 
 # Tutorial/Video of visuals
 

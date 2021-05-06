@@ -7,10 +7,9 @@ public class NeilsVisual extends Visual {
     Intro io;
     Disco disco;
     RotatingAudioBands rb;
-
-    float aa;
     float halfh, halfw;
     float waveX, waveY;
+    Rain[] r = new Rain[250];
 
     public void settings()
     {
@@ -58,6 +57,11 @@ public class NeilsVisual extends Visual {
         disco = new Disco(this, halfw, halfh);
 
         rb = new RotatingAudioBands(this, halfw, halfh);
+
+        for(int i = 0; i<r.length; i++)
+        {
+            r[i] = new Rain(this);
+        }
     }
 
     public void keyPressed()
@@ -65,6 +69,11 @@ public class NeilsVisual extends Visual {
         if (key == ' ')
         {
             disco.render();
+            for(int i = 0; i<r.length; i++)
+            {
+                r[i].draw();
+                r[i].fall();
+            }
         }
         if (key == '1')
         {
