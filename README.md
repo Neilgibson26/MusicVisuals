@@ -11,7 +11,7 @@ It reacts to the sound of the music in multiple ways throughout the  song includ
 # Instructions
 1.  This is the intro and it loads automatically on the first render along with the music. *Keep it playing untill enjoy sits in the middle of the screen and the music starts to pick up.* ![An image](images/intro.jpg)
 
-1.  This is the disco ball that should spin for approx 30 seconds again until a key change in the music, its purpose is to set the discoey scene for the rest of the visual with a nice spinning disco ball that changes colour and some rain. You access this by hitting the spacebar. ![An image](images/Disco.jpg)
+1.  This is the disco ball that should spin for approx 30 seconds again until a key change in the music, its purpose is to set the discoey scene for the rest of the visual with a nice spinning disco ball that changes colour and some rain. You access this by hitting the spacebar. ![An image](images/Disco.jpeg)
 
 1.  This the first iteration of the vinyl record and should be pressed after the first key change in the song. Accessed by pressing the number '1' key. ![An image](images/v1.jpeg)
 
