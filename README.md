@@ -25,7 +25,7 @@ It reacts to the sound of the music in multiple ways throughout the  song includ
 
 1.  This is the sixth iteration of the vinyl, teasing sine waves connecting cubes from left to right and should be swapped back and forth with the previous feature along with the beat until the next hook/chorus. Accessed by pressing the number '6' key. ![An image](images/V6.jpeg)
 
-1.  This is the final form of the vinyl and will combine every feature up until now. Every feature before this has beenleading up to this stage and can be accessed by pressing the '7' key. ![An image](images/V7.jpeg)
+1.  This is the final form of the vinyl and will combine every feature up until now. Every feature before this has been leading up to this stage and can be accessed by pressing the '7' key. ![An image](images/V7.jpeg)
 
 1.  Finally as the music fizzles out there will be a small outro with rotating cubes that grow and shrink with the sound of the music and a thank you note. This can be accessed by pressing the number '8' key. *!!!This should only be pressed last as it changes the angle of the screens camera to view these rotating audio bands!!!* ![An image](images/Outro.jpeg)
 
