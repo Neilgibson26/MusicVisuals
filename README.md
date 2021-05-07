@@ -15,7 +15,7 @@ It reacts to the sound of the music in multiple ways throughout the  song includ
 
 1.  This the first iteration of the vinyl record and should be pressed after the first key change in the song. Accessed by pressing the number '1' key. ![An image](images/V1.jpg)
 
-1.  This is the second iteration of the vinyl which spawns 2 cubes on the top left and bottom right of the screen. This will be swapped back and forth with the next feature to create some nice visuals. This can be accessed buy hitting the '2' key. ![An image](images/V2.jpg)
+1.  This is the second iteration of the vinyl which spawns 2 cubes on the top left and bottom right of the screen. This will be swapped back and forth with the next feature to create some nice visuals. This can be accessed buy hitting the '2' key. ![An image](images/V2.jpeg)
 
 1. This is the 3rd iteration and as mentioned befor will be swapped back and forth with the previous feature to create nice visuals to go along with the music. This spawns 2 cubes on the top right and bottom left of the screen. This feature can be accessed by hitting the number '3' key. ![An image](images/V3.jpg)
 
