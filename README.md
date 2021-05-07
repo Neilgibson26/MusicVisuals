@@ -89,5 +89,7 @@ Lastly I would say the vector/array of a type(class) that i made to form the rai
 Click the picture!! Or if not loading click link for video!!
 [![YouTube](https://i9.ytimg.com/vi_webp/v-pLqiG7g-Y/mqdefault.webp?time=1619444400000&sqp=CLCFm4QG&rs=AOn4CLAOi_r55nkh_FDuvWJKIrVr7edi-g)](https://youtu.be/vVwNrT_sHXo)
 
+*This is the updated video!!!!!!!!!!!!!!!!!!!!!*
+
 * *If this link does not work then the video is in the data folder!!* 
 
