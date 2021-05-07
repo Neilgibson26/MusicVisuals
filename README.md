@@ -27,7 +27,7 @@ It reacts to the sound of the music in multiple ways throughout the  song includ
 
 1.  This is the final form of the vinyl and will combine every feature up until now. Every feature before this has beenleading up to this stage and can be accessed by pressing the '7' key. ![An image](images/v7.jpg)
 
-1.  Finally as the music fizzles out there will be a small outro with rotating cubes that grow and shrink with the sound of the music and a thank you note. This can be accessed by pressing the number '8' key. *!!!This should only be pressed last as it changes the angle of the screens camera to view these rotating audio bands!!!* ![An image](images/outro.jpg)
+1.  Finally as the music fizzles out there will be a small outro with rotating cubes that grow and shrink with the sound of the music and a thank you note. This can be accessed by pressing the number '8' key. *!!!This should only be pressed last as it changes the angle of the screens camera to view these rotating audio bands!!!* ![An image](images/Outro.jpeg)
 
 # How it works
 Firstly I created an abstract class that contains all of the methods I need to read in an audio buffer, get the amplitudes of the song, calculate the average amplitude, audio bands using the minim and fft libraries. I then generated the getters and setters required for all aforementioned. The main processing class then extends this and sets the program up by retrieving all of the information needed to create reactive visuals. I have 6 seperate classes other than the 2 just mentioned.
